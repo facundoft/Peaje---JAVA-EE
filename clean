@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mvn -f TallerJava-master/pom.xml clean 
+mvn -f TallerJava-MediosPagoMock/pom.xml clean
+mvn -f SOAPsucive/pom.xml clean

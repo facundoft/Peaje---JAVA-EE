@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Ejecuta mvn clean package wildfly:dev en el master antes de hacer esto"
+sudo docker start docker-influxdb-grafana
+mvn -f TallerJava-MediosPagoMock/pom.xml package wildfly:deploy
+mvn -f SOAPsucive/pom.xml package wildfly:deploy
+
+echo "Ejecuta mvn clean package wildfly:dev en el master antes de hacer esto"
